@@ -1,0 +1,22 @@
+{
+  "name": "custom-command",
+  "version": "1.0.0",
+  "description": "Create custom commands for terminal.",
+  "main": "index.js",
+  "bin": {
+    "custom-command": "index.js"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "child-process-promise": "^2.2.1",
+    "commander": "^5.1.0",
+    "prompts": "^2.3.2"
+  }
+}
