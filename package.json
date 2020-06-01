@@ -1,10 +1,10 @@
 {
-  "name": "custom-command",
-  "version": "1.0.0",
+  "name": "@jatin_ranka/custom-command",
+  "version": "1.0.1",
   "description": "Create custom commands for terminal.",
   "main": "index.js",
   "bin": {
-    "custom-command": "index.js"
+    "custom-command": "bin/index.js"
   },
   "directories": {
     "lib": "lib"
@@ -18,5 +18,14 @@
     "child-process-promise": "^2.2.1",
     "commander": "^5.1.0",
     "prompts": "^2.3.2"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JatinRanka/Custom-command.git"
+  },
+  "bugs": {
+    "url": "https://github.com/JatinRanka/Custom-command/issues"
+  },
+  "homepage": "https://github.com/JatinRanka/Custom-command#readme"
 }
