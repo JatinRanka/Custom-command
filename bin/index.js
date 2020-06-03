@@ -1,29 +1,30 @@
 #!/usr/bin/env node
 
-
 // External dependencies
 const { program } = require('commander');
+
+// Version from package.json
+const {version} = require('../package.json');
 
 // Helper functions
 const actions = require('../lib/actions.js');
 
 
-program.version('0.0.1', '-v, --vers', 'output the current version');
+program
+    .version(version, '-v, --vers', 'output the current version');
 
  
 program
     .command('add')
+    .description('To add/save new directory/command')
     .option('-u --url', 'Use this to add websites')
-    .option('-c --custom', 'Use this to add custom commands.')
+    .option('-c --custom', 'Use this to add custom commands')
     .action(function (cmdObj) {
         if(cmdObj.url){
-            // console.log("in url");return;
             actions.addNewWebsite();
         } else if(cmdObj.custom){
-            // console.log("in custom");return;
             actions.addCustomCommand();
         } else{
-            // console.log("in normal");return;
             const path = process.cwd(); 
             actions.addNewDirectory(path);
         }
@@ -32,33 +33,38 @@ program
 
 program
     .command('open [projectToOpen]')
+    .description('To open existing projects')
     .action(async function(projectToOpen){
         await actions.openProject(projectToOpen);
     });
 
 program
     .command('delete')
+    .description('To delete an existing project')
     .action(async function(){
         await actions.deleteProject();
     })
 
 program
     .command('rmeditor')
+    .description('To remove the current default editor')
     .action(function(){
         actions.removeEditor();
     });
 
 program
     .command('seteditor')
+    .description('To set default editor')
     .action(function(){
         actions.setEditor();
     });
 
 program
     .command('rmbrowser')
+    .description('To remove the current default browser')
     .action(function(){
         actions.removeBrowser();
     });
   
 
-program.parse(process.argv)
+program.parse(process.argv);
