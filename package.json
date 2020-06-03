@@ -2,7 +2,6 @@
   "name": "@jatin_ranka/custom-command",
   "version": "1.0.1",
   "description": "Create custom commands for terminal.",
-  "main": "index.js",
   "bin": {
     "custom-command": "bin/index.js"
   },

@@ -1,7 +1,9 @@
 {
     "defaultBrowser": "",
-    "defaultEditor": "",
     "projects": {
-
+        "undefined": {
+            "path": "C:\\Users\\Jatin\\Desktop\\New folder\\nodejs cli\\custom-command",
+            "type": "directory"
+        }
     }
 }

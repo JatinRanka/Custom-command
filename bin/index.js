@@ -1,12 +1,20 @@
 #!/usr/bin/env node
 
+
+// External dependencies
 const { program } = require('commander');
+
+// Helper functions
 const actions = require('../lib/actions.js');
+
+
+program.version('0.0.1', '-v, --vers', 'output the current version');
+
  
 program
     .command('add')
-    .option('-u --url', 'URL')
-    .option('-c --custom')
+    .option('-u --url', 'Use this to add websites')
+    .option('-c --custom', 'Use this to add custom commands.')
     .action(function (cmdObj) {
         if(cmdObj.url){
             // console.log("in url");return;
@@ -23,15 +31,15 @@ program
  
 
 program
-    .command('open')
-    .action(function(){
-        actions.openProject();
+    .command('open [projectToOpen]')
+    .action(async function(projectToOpen){
+        await actions.openProject(projectToOpen);
     });
 
 program
     .command('delete')
-    .action(function(){
-        actions.deleteProject();
+    .action(async function(){
+        await actions.deleteProject();
     })
 
 program
@@ -51,9 +59,6 @@ program
     .action(function(){
         actions.removeBrowser();
     });
-
-
-   
-
+  
 
 program.parse(process.argv)
