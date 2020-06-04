@@ -4,7 +4,7 @@
 const { program } = require('commander');
 
 // Version from package.json
-const {version} = require('../package.json');
+const { version } = require('../package.json');
 
 // Helper functions
 const actions = require('../lib/actions.js');
@@ -19,14 +19,14 @@ program
     .description('To add/save new directory/command')
     .option('-u --url', 'Use this to add websites')
     .option('-c --custom', 'Use this to add custom commands')
-    .action(function (cmdObj) {
+    .action(async function (cmdObj) {
         if(cmdObj.url){
             actions.addNewWebsite();
         } else if(cmdObj.custom){
             actions.addCustomCommand();
         } else{
             const path = process.cwd(); 
-            actions.addNewDirectory(path);
+            await actions.addNewDirectory(path);
         }
     });
  
@@ -65,6 +65,6 @@ program
     .action(function(){
         actions.removeBrowser();
     });
-  
+
 
 program.parse(process.argv);
