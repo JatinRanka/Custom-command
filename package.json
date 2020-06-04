@@ -2,9 +2,11 @@
   "name": "custom-command",
   "version": "1.0.0",
   "description": "Create custom commands for terminal.",
+  "license": "MIT",
   "main": "index.js",
   "bin": {
-    "custom-command": "index.js"
+    "custom-command": "bin/index.js",
+    "cc": "bin/index.js"
   },
   "directories": {
     "lib": "lib"
@@ -17,10 +19,20 @@
     "url": "git+https://github.com/JatinRanka/Custom-command.git"
   },
   "author": "Jatin Ranka <jatinranka123@gmail.com>",
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/JatinRanka/Custom-command/issues"
   },
+  "keywords": [
+    "custom command",
+    "cc",
+    "customize command",
+    "terminal",
+    "cli tricks",
+    "cli shortcuts",
+    "save projects",
+    "Jatin Ranka",
+    "jatinranka"
+  ],
   "homepage": "https://github.com/JatinRanka/Custom-command#readme",
   "dependencies": {
     "chalk": "^4.0.0",
