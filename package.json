@@ -1,6 +1,6 @@
 {
   "name": "custom-command",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Create custom commands for terminal.",
   "license": "MIT",
   "main": "index.js",
