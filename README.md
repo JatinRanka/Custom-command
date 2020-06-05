@@ -1,6 +1,8 @@
 # Custom - Command
 Tired of opening projects by searching through nested folders. Save projects in your terminal and open from anywhere in your preferred editor with just one command. Save websites in terminal and open with ease. 
 
+![](cc_add_dir.gif)
+
 
 ## Requirements
 Nothing much, you must just have [npm](https://www.npmjs.com/) installed in your machine.
@@ -26,6 +28,9 @@ Alternatively, you can also use the following to make the process even faster.
     cc add
     
 You can always use either **custom-command** or **cc**.
+
+![](cc_add_dir.gif)
+
 
 This will prompt the user for the name with which you would like to save the current directory/project. Once you enter the name, your project will be saved and will be accessible from anywhere using terminal.
 
