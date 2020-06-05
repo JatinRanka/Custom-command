@@ -1,7 +1,14 @@
 # Custom - Command
 Tired of opening projects by searching through nested folders. Save projects in your terminal and open from anywhere in your preferred editor with just one command. Save websites in terminal and open with ease. 
 
+<div align="center" >
+
+<a href="https://www.npmjs.com/package/custom-command"><img src="https://nodei.co/npm/custom-command.png"></a>
+
 ![](cc_add_dir.gif)
+
+</div>
+
 
 
 ## Requirements
