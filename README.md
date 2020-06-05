@@ -1,5 +1,5 @@
 # Custom - Command
-Tired of opening projects by searching through nested folders. Save projects in your terminal and open from anywhere with just one command. Save websites in terminal and open with ease. 
+Tired of opening projects by searching through nested folders. Save projects in your terminal and open from anywhere in your preferred editor with just one command. Save websites in terminal and open with ease. 
 
 
 ## Requirements
@@ -8,7 +8,9 @@ Nothing much, you must just have [npm](https://www.npmjs.com/) installed in your
 ## Installation
 Install using the following command in the terminal.
 
+```
     npm i -g custom-command
+```
 
 Note: After installation, you can use, **custom-command** or **cc** anywhere in your terminal to ensure whether it has been installed or not.
     
@@ -35,68 +37,80 @@ Here is an example of the same.
 
 -----------------add example-----------------------
 
- To save website add **-u** or **- -url** at the end.
- -----------------add example-----------------------
+ To save website add **-u** or **--url** at the end.
 
-To save custom command at **-c** or **- -custom**  at the end.
- -----------------add example-----------------------
+```
+    cc add -u
+```
 
---------------------
+
+To save custom command at **-c** or **--custom**  at the end.
+
+```
+    cc add -c
+```
+
+-----------------
+
 ### Open 
 Now once you have saved your project, it's time to open the projects using the terminal, no matter what your [pwd](https://en.wikipedia.org/wiki/Working_directory) is.
 
 Use the following command to open your project:
 
+```
     cc open
-   
-   This will show the list of all the projects, websites, and custom commands which are already saved. Select the project to open.
+```
 
- -----------------add example-----------------------
+This will show the list of all the projects, websites, and custom commands which are already saved. Select the project to open.
 
 You can also specify the name of the project which you want to open.
 For example,
-
+```
     cc open [project-Name]
-   This will directly open the project in your project/ website in your preferred editor/ browser.
+```
 
- -----------------add example-----------------------
+This will directly open the project in your project/ website in your preferred editor/ browser.
 
 ----------------
 
 ### Delete project
 To delete an existing project, use the following command.
 
+```
     cc delete
-   
-   This will list all the saved projects. Select the project which you want to delete.
- -----------------add example-----------------------
+```   
+This will list all the saved projects. Select the project which you want to delete.
 
 ----------------
+
 ### Set editor
 To set/change the default editor for your projects, use the following command.
 
+```
     cc seteditor
-   
+```
+
  Choose from the list of available editors to change/set it.
 
- -----------------add example-----------------------
-
 -----------------------
+
 ### Remove editor
 To delete the default editor for your projects, use the following command.
 
+```
     cc rmeditor
-   
- -----------------add example-----------------------
+```
 
 -----------------------
+
 ### Remove browser
 To delete the default browser to open websites, use the following command.
 
+```
     cc rmbrowser
-   
- -----------------add example-----------------------
- 
+```
+
+
  ------------
 
 
