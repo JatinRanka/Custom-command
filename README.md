@@ -37,17 +37,15 @@ This will prompt the user for the name with which you would like to save the cur
 Initially, it will ask the user to select for their choice of editor, in which it will open the project every time. Choose your choice and continue.
 
 
+### Add/Save Websites
 
-Here is an example of the same.
-
------------------add example-----------------------
-
- To save website add **-u** or **--url** at the end.
+To save website add **-u** or **--url** at the end.
 
 ```
     cc add -u
 ```
 
+### Add/Save custom commands
 
 To save custom command at **-c** or **--custom**  at the end.
 
